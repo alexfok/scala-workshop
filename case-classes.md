@@ -10,3 +10,14 @@ Automatic generation of many productive methods:
 * `unapply` for pattern matching
 * `copy` method
   * `mr.copy(word = mr.word.capitalize)`
+
+### Example: unapply
+
+```
+object CustomUnapply {
+  def unapply(s: String): Option[String] = Some(s"Always returns input: $s")
+}
+
+scala> val CustomUnapply(s) = "hello"
+s: String = Always returns input: hello
+```
