@@ -1,5 +1,7 @@
 ## Parameterized Type: Option
 
+Review [Option's scaladoc](http://www.scala-lang.org/api/current/index.html#scala.Option) where the different ways are presented and classified as the most and less idiomatic.
+
 An idiom to avoid returning a sentinel or null value when no value is returned from a method, e.g. `fetchMaxOffset`.
 
 ```
