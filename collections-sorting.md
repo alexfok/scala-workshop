@@ -1,0 +1,5 @@
+## Collection Sorting
+
+```
+Seq.sortWith
+```
