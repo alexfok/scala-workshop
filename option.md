@@ -14,3 +14,11 @@ val acc: Accumulable[Any, Any] = Accumulators.get(id) match {
     throw new SparkException(s"attempted to access non-existent accumulator $id")
 }
 ```
+
+### Exercise 1
+
+Think about a way to do the following check (with `if`) using `Option`. How would you go about it?
+
+```
+if (serializedData != null && serializedData.limit() > 0) {
+```
