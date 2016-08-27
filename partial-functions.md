@@ -15,4 +15,7 @@ val mf: PartialFunction[String, Int] = m
 val catchAll: PartialFunction[Any, String] = { case _ => "NotFound"}
 val handler = mf orElse catchAll
 Seq("hello", "nice").collect(handler)
+
+// Filter out strings with 2 characters only
+Seq(1, "hllo", "hh").collect { case s: String if s.size == 2 => s }
 ```
